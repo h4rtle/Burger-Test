@@ -1,5 +1,5 @@
-body {
-    
+
+body{
 font-family: 'Nunito Sans', sans-serif;
 }
 .container{
@@ -46,4 +46,79 @@ font-family: 'Nunito Sans', sans-serif;
 }
 .header-nav a.active::after{
     background-color: #ffc725;
+}
+.button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    gap: 10px;
+}
+.buttom-item{
+    position: relative;
+}
+.button-count{
+    color:#FFFFFF;;
+    font-weight: 700;
+    font-size: 10px;
+    background: #F37335;
+    border-radius: 100%;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    text-align: center;
+    line-height: 1.3;
+    bottom: 3px;
+    right: -4px;
+}
+.button-text{
+    color:#443737;
+    font-weight: 700;
+    font-size: 15px;    
+    
+}
+.bg{
+    text-align: center;
+    color: #FFFFFF;
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 142px 0;
+}
+.bredcrumbs{
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.bredcrumbs a{
+    color: #DEDEDE;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+
+}
+.bredcrumbs a::before{
+    content: '/'; 
+    position: relative;
+    left: -7px;
+}
+.bredcrumbs li:first-child a::before{
+    display: none;
+}
+.title{
+    font-weight: 700;
+    font-size: 79px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 320px;
+    margin: 0 auto;
 }
